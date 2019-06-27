@@ -10,8 +10,8 @@ def create_db():
     doc = {
     'id':111,
     'content':{
-        'name':'madhu',
-        'mailid':'madhumpandurangi@gmail.com'
+        'name':'XYZ',
+        'mailid':'XYZ@gmail.com'
         }
     }
 
@@ -26,8 +26,8 @@ def upload_db():
     doc = {
     'id':112,
     'content':{
-        'name':'madhurimp',
-        'mailid':'madhurimpandurangi@gmail.com'
+        'name':'ABC',
+        'mailid':'ABC@gmail.com'
         }
     }
 
