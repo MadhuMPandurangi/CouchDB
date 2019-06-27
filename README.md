@@ -1,5 +1,5 @@
 # CouchDB
-This is the basic CRUD operation usind Python and CouchDB in Ununtu(16.04) 
+This is the basic CRUD operation using Python and CouchDB in Ununtu(16.04) 
 
 1. Install python3
 Open terminal via Ctrl+Alt+T or searching for “Terminal” from app launcher. When it opens, run command to add the PPA:
