@@ -4,14 +4,18 @@ couchserver = couchdb.Server("http://127.0.0.1:5984/")
 
 #fucntion to create db and store date in db
 def create_db():
-
-    db = couchserver.create('db_test')
-
+    
+    if 'db_test' in couchserver:
+        db = couchserver['db_test']
+    else:
+        db = couchserver.create('db_test')
+            
+    
     doc = {
     'id':111,
     'content':{
-        'name':'XYZ',
-        'mailid':'XYZ@gmail.com'
+        'name':'madhu',
+        'mailid':'madhumpandurangi@gmail.com'
         }
     }
 
@@ -26,8 +30,8 @@ def upload_db():
     doc = {
     'id':112,
     'content':{
-        'name':'ABC',
-        'mailid':'ABC@gmail.com'
+        'name':'madhurimp',
+        'mailid':'madhurimpandurangi@gmail.com'
         }
     }
 
@@ -39,21 +43,13 @@ def retrieve_from_db():
 
     db = couchserver['db_test']
 
-    rows =  db.view('_all_docs',include_docs=True)
-    data = [row['doc'] for row in rows]
+    i = 1
+    content = dict()
+    for item in db.view('_design/content/_view/content'):
+        content.update({i:item.key}) 
+        i+=1 
 
-    #converting to json
-    jsondata = json.dumps(data)
-
-    #splitting and converting to list 
-    split1 = jsondata.split('{')
-
-    #converting to string
-    str1 = str(split1[2])
-
-    #splitting and converting to list
-    split2 = str1.split('}')
-    print(split2[0])
+    print(content[2]['name'])
 
 
 #deleting data from couchdb
