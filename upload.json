@@ -1,0 +1,18 @@
+{
+    "Instruction":"upload",
+    "Database name":"doctor",
+    "Content":{
+        "Vinayaka Hospital":{
+            "Name of the doctor":"Dr.Vijay",
+            "Specialization":"Skin specialist",
+            "Education":"MBBS/MD",
+            "Experience in years":"2"
+        },
+        "Apollo Multispeciality Hospital":{
+            "Name of the doctor":"Dr.Kiran",
+            "Specialization":"Neurologist",
+            "Education":"MBBS/MD",
+            "Experience in years":"3" 
+        }
+    }
+}
