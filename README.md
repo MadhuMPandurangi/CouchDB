@@ -21,3 +21,13 @@ This will help to install couchdb
 
 3.Install python package 
 pip install couchdb
+
+
+
+
+How to run the code?
+1. clone the files using "git clone" command.
+2. Go to the CouchDb directory by typing "cd Couchdb" in your terminal.
+2. Run the main.py with the json file(Here through the command line json file has been passed)
+  a. If u want to create a database, then the command to run the main.py file will be:
+      python3 main.py JSON/create.json
