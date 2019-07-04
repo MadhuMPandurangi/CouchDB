@@ -1,5 +1,5 @@
 import couchdb,json,sys
-from CRUD import create_database,update_database,update_data
+from CRUD import create_database,update_database,update_data,retrieve_from_db
 
 couchserver = couchdb.Server("http://127.0.0.1:5984/")
 
@@ -19,3 +19,7 @@ with open(sys.argv[1], 'r')as f:
     #update the data (modifying the database)
     if(data['Instruction'] == 'update'):
         update_data.update_db(data)
+
+    #retrieving data from db
+    if(data["Instruction"] == 'retrieve'):
+        retrieve_from_db.retrieve_from_db(data)
