@@ -1,5 +1,6 @@
 import couchdb,json,sys
-from CRUD import create_database,update_database
+from CRUD import create_database,update_database,update_data
+
 couchserver = couchdb.Server("http://127.0.0.1:5984/")
 
 
@@ -14,3 +15,7 @@ with open(sys.argv[1], 'r')as f:
     #Check and update or enter the details
     if(data['Instruction'] == 'upload'):
         update_database.update_db(data)
+
+    #update the data (modifying the database)
+    if(data['Instruction'] == 'update'):
+        update_data.update_db(data)

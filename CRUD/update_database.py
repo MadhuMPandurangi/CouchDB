@@ -10,5 +10,6 @@ def update_db(data):
        doc = data['Content']
        db = couchserver[database]
        db.save(doc)
+       print("Uploaded data to "+database+ "database successfully")
     else:
         print("Database "+database+" doesnot exist")    
