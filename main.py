@@ -1,12 +1,13 @@
 import couchdb,json,sys
-from CRUD import create_database,update_database,update_data,retrieve_from_db
+from CRUD import create_database,initial_upload,update_data,retrieve_from_db
 
-couchserver = couchdb.Server("http://127.0.0.1:5984/")
+couchserver = couchdb.Server("http://0.0.0.0:5984/")
 
 
 with open(sys.argv[1], 'r')as f:
     data = f.read()
     data = json.loads(data)
+
     
     #Check and create a database
     if(data['Instruction'] == 'create'):
@@ -14,7 +15,7 @@ with open(sys.argv[1], 'r')as f:
 
     #Check and update or enter the details
     if(data['Instruction'] == 'upload'):
-        update_database.update_db(data)
+        initial_upload.update_db(data)
 
     #update the data (modifying the database)
     if(data['Instruction'] == 'update'):

@@ -2,21 +2,21 @@
     "Instruction":"upload",
     "Database name":"doctor",
     "Content":{
-        "Content":{
-            "Vinayaka Hospital":{
-                "Doctor-ID":"1D11",
-                "Name of the doctor":"Dr.Vijay",
-                "Specialization":"Skin specialist",
-                "Education":"MBBS/MD",
-                "Experience in years":"2"
-            },
-            "Apollo Multispeciality Hospital":{
-                "Doctor-ID":"2D11",
-                "Name of the doctor":"Dr.Kiran",
-                "Specialization":"Neurologist",
-                "Education":"MBBS/MD",
-                "Experience in years":"3" 
-            }
+        "1":{
+            "_id":"Doctor2",
+            "hospital_id":"apolo101",
+            "doctor_name":"Suresh M R",
+            "Hospital_name":"Apolo Multispeciality Hospital",
+            "Specialization":"Gynocologist",
+            "Experience":"4Years"
+        },
+        "2":{
+            "_id":"Doctor3",
+            "hospital_id":"vinayaka102",
+            "doctor_name":"Keerthi N",
+            "Hospital_name":"Vinayaka Hospital",
+            "Specialization":"Gynocologist",
+            "Experience":"1Year"
         }
         
     }

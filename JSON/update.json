@@ -2,13 +2,15 @@
     "Instruction":"update",
     "Database name":"doctor",
     "Update":{
-        "Vinayaka_Hospital":{
-            "Doctor-ID":"1D21",
-            "Experience in years":"5"
+        "1":{
+            "_id":"Doctor2",
+            "Experience":"5Years",
+            "Specialization":"Neurologist"
         },
-        "Apollo_Multispeciality_Hospital":{
-            "Doctor-ID":"2D21",
-            "Education":"MBBS/MD/DM"
+        "2":{
+            "_id":"Doctor3",
+            "Experience":"2Year"
         }
+        
     }
 }
